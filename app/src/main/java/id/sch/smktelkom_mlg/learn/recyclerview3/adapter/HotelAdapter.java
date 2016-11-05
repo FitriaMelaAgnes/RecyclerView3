@@ -39,7 +39,7 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
         hotel Hotel = hotelList.get(position);
         holder.tvJudul.setText(Hotel.judul);
         holder.tvDeskripsi.setText(Hotel.deskripsi);
-        holder.ivFoto.setImageURI(Uri.parse(hotel.foto));
+        holder.ivFoto.setImageURI(Uri.parse(Hotel.foto));
     }
 
     @Override

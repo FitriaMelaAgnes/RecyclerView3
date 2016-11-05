@@ -33,7 +33,7 @@ public class DetailActivity extends AppCompatActivity {
         hotel Hotel = (hotel) getIntent().getSerializableExtra(MainActivity.HOTEL);
         setTitle(Hotel.judul);
         ImageView ivFoto = (ImageView) findViewById(R.id.imageFoto);
-        ivFoto.setImageURI(Uri.parse(hotel.foto));
+        ivFoto.setImageURI(Uri.parse(Hotel.foto));
         TextView tvDeskripsi = (TextView) findViewById(R.id.place_detail);
         tvDeskripsi.setText(Hotel.deskripsi + "\n\n" + Hotel.detail);
         TextView tvLokasi = (TextView) findViewById(R.id.place_location);

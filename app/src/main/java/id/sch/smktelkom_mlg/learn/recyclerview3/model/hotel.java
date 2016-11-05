@@ -7,7 +7,7 @@ import java.io.Serializable;
  */
 
 public class hotel implements Serializable {
-    public static String foto;
+    public String foto;
     public String judul;
     public String deskripsi;
     public String detail;
@@ -18,7 +18,7 @@ public class hotel implements Serializable {
         this.deskripsi = deskripsi;
         this.detail = detail;
         this.lokasi = lokasi;
-        hotel.foto = foto;
+        this.foto = foto;
 
     }
 }
